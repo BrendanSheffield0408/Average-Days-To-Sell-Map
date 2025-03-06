@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7463fbb1153a9ed66c397e0eef697e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7463fbb1153a9ed66c397e0eef697e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7463fbb1153a9ed66c397e0eef697e6 = L.map(
+                "map_e7463fbb1153a9ed66c397e0eef697e6",
+                {
+                    center: [54.5, -4.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f797cec2c03ead42e1674baf7ed5a99b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f797cec2c03ead42e1674baf7ed5a99b.addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+            var circle_marker_83109258f62d49be84122a8aeef96e6d = L.circleMarker(
+                [54.5985, -5.92535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_598ca2a6de229d980168568f42e19dca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_040e77ebb888bc2c89cd5e1f866d82cc = $(`<div id="html_040e77ebb888bc2c89cd5e1f866d82cc" style="width: 100.0%; height: 100.0%;">Belfast: 45.51 days</div>`)[0];
+                popup_598ca2a6de229d980168568f42e19dca.setContent(html_040e77ebb888bc2c89cd5e1f866d82cc);
+            
+        
+
+        circle_marker_83109258f62d49be84122a8aeef96e6d.bindPopup(popup_598ca2a6de229d980168568f42e19dca)
+        ;
+
+        
+    
+    
+            var circle_marker_342136faeab1fe157eee89dd192c45b1 = L.circleMarker(
+                [52.484, -1.8814100000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_3a24ad1cddcb975e1108504276fb890c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d89954e67081ba000559f218563580ce = $(`<div id="html_d89954e67081ba000559f218563580ce" style="width: 100.0%; height: 100.0%;">Birmingham: 39.78 days</div>`)[0];
+                popup_3a24ad1cddcb975e1108504276fb890c.setContent(html_d89954e67081ba000559f218563580ce);
+            
+        
+
+        circle_marker_342136faeab1fe157eee89dd192c45b1.bindPopup(popup_3a24ad1cddcb975e1108504276fb890c)
+        ;
+
+        
+    
+    
+            var circle_marker_30a53e9240f003063d6c9e22aef6e1a0 = L.circleMarker(
+                [53.82159999999999, -3.02203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_af2432b4a3f87c32ba401a020f94cb6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c142d81fac857e821e7618786b1b4d56 = $(`<div id="html_c142d81fac857e821e7618786b1b4d56" style="width: 100.0%; height: 100.0%;">Blackpool: 40.39 days</div>`)[0];
+                popup_af2432b4a3f87c32ba401a020f94cb6d.setContent(html_c142d81fac857e821e7618786b1b4d56);
+            
+        
+
+        circle_marker_30a53e9240f003063d6c9e22aef6e1a0.bindPopup(popup_af2432b4a3f87c32ba401a020f94cb6d)
+        ;
+
+        
+    
+    
+            var circle_marker_b2ce4a81b35c7c513db7ebb5ac07e857 = L.circleMarker(
+                [53.5845, -2.47952],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_673235e3b5773c03c8b8b47c2b4438cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c69d827bf4ea0c75ae143fb1d1ba904 = $(`<div id="html_7c69d827bf4ea0c75ae143fb1d1ba904" style="width: 100.0%; height: 100.0%;">Bolton: 40.90 days</div>`)[0];
+                popup_673235e3b5773c03c8b8b47c2b4438cc.setContent(html_7c69d827bf4ea0c75ae143fb1d1ba904);
+            
+        
+
+        circle_marker_b2ce4a81b35c7c513db7ebb5ac07e857.bindPopup(popup_673235e3b5773c03c8b8b47c2b4438cc)
+        ;
+
+        
+    
+    
+            var circle_marker_6063d705c71ae88d75fa2f9faf76b706 = L.circleMarker(
+                [53.8438, -1.8739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_0a949925f4e47ce3564ab86008a3aa3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4525b55ff1d8560927e99b80ee60f46 = $(`<div id="html_b4525b55ff1d8560927e99b80ee60f46" style="width: 100.0%; height: 100.0%;">Bradford: 45.59 days</div>`)[0];
+                popup_0a949925f4e47ce3564ab86008a3aa3b.setContent(html_b4525b55ff1d8560927e99b80ee60f46);
+            
+        
+
+        circle_marker_6063d705c71ae88d75fa2f9faf76b706.bindPopup(popup_0a949925f4e47ce3564ab86008a3aa3b)
+        ;
+
+        
+    
+    
+            var circle_marker_b0d44a12e3cbc37e8d8f47f227b17438 = L.circleMarker(
+                [51.3727, 0.039246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_ff48e8647e004232f1400be137abb922 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be71a0b58f57a5f524d927636f5fbdb6 = $(`<div id="html_be71a0b58f57a5f524d927636f5fbdb6" style="width: 100.0%; height: 100.0%;">Bromley: 39.31 days</div>`)[0];
+                popup_ff48e8647e004232f1400be137abb922.setContent(html_be71a0b58f57a5f524d927636f5fbdb6);
+            
+        
+
+        circle_marker_b0d44a12e3cbc37e8d8f47f227b17438.bindPopup(popup_ff48e8647e004232f1400be137abb922)
+        ;
+
+        
+    
+    
+            var circle_marker_40835c26661b0f3062b3fe06e0b58019 = L.circleMarker(
+                [52.2002, 0.126436],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_ead6a7473f63267e61855a06256cc30d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94ee57ca919f7e323884360330211db0 = $(`<div id="html_94ee57ca919f7e323884360330211db0" style="width: 100.0%; height: 100.0%;">Cambridge: 39.40 days</div>`)[0];
+                popup_ead6a7473f63267e61855a06256cc30d.setContent(html_94ee57ca919f7e323884360330211db0);
+            
+        
+
+        circle_marker_40835c26661b0f3062b3fe06e0b58019.bindPopup(popup_ead6a7473f63267e61855a06256cc30d)
+        ;
+
+        
+    
+    
+            var circle_marker_bd1be2b621d195d6207479c67d204e5e = L.circleMarker(
+                [51.281, 1.09633],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_2c3d9d2dd2bf1b60d48153fdbbbb1f3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe0fb7bc7fe43b8318a09cb61543c029 = $(`<div id="html_fe0fb7bc7fe43b8318a09cb61543c029" style="width: 100.0%; height: 100.0%;">Canterbury: 38.60 days</div>`)[0];
+                popup_2c3d9d2dd2bf1b60d48153fdbbbb1f3c.setContent(html_fe0fb7bc7fe43b8318a09cb61543c029);
+            
+        
+
+        circle_marker_bd1be2b621d195d6207479c67d204e5e.bindPopup(popup_2c3d9d2dd2bf1b60d48153fdbbbb1f3c)
+        ;
+
+        
+    
+    
+            var circle_marker_9914e98050b606a5eda49907f7dd4520 = L.circleMarker(
+                [51.5025, -3.22209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_ae6f8b7b3ebd71c7adf2d7c81336ff50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af74efe1dad7a51ca4619370193e5bc1 = $(`<div id="html_af74efe1dad7a51ca4619370193e5bc1" style="width: 100.0%; height: 100.0%;">Cardiff: 43.81 days</div>`)[0];
+                popup_ae6f8b7b3ebd71c7adf2d7c81336ff50.setContent(html_af74efe1dad7a51ca4619370193e5bc1);
+            
+        
+
+        circle_marker_9914e98050b606a5eda49907f7dd4520.bindPopup(popup_ae6f8b7b3ebd71c7adf2d7c81336ff50)
+        ;
+
+        
+    
+    
+            var circle_marker_73c048a3a11722243256c68434dd342b = L.circleMarker(
+                [51.735, 0.49117700000000003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_2eb78826844aefd136c528566978a489 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_134b061899b9a898ffae1d1f80158e66 = $(`<div id="html_134b061899b9a898ffae1d1f80158e66" style="width: 100.0%; height: 100.0%;">Chelmsford: 46.10 days</div>`)[0];
+                popup_2eb78826844aefd136c528566978a489.setContent(html_134b061899b9a898ffae1d1f80158e66);
+            
+        
+
+        circle_marker_73c048a3a11722243256c68434dd342b.bindPopup(popup_2eb78826844aefd136c528566978a489)
+        ;
+
+        
+    
+    
+            var circle_marker_14e917764fb51c2c76f3c402e1cd8c65 = L.circleMarker(
+                [51.877, 0.85982],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_6300865710c6ff6d9eddbef0006e7011 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee2c9712597ede80083712d87cb4574a = $(`<div id="html_ee2c9712597ede80083712d87cb4574a" style="width: 100.0%; height: 100.0%;">Colchester: 50.32 days</div>`)[0];
+                popup_6300865710c6ff6d9eddbef0006e7011.setContent(html_ee2c9712597ede80083712d87cb4574a);
+            
+        
+
+        circle_marker_14e917764fb51c2c76f3c402e1cd8c65.bindPopup(popup_6300865710c6ff6d9eddbef0006e7011)
+        ;
+
+        
+    
+    
+            var circle_marker_3c211a95e5e91ecf6083444fe0096138 = L.circleMarker(
+                [52.4142, -1.51905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_ebabafc627b8ce9467a60a3d664e243e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aea1b94cf905b6761269b151f769dc36 = $(`<div id="html_aea1b94cf905b6761269b151f769dc36" style="width: 100.0%; height: 100.0%;">Coventry: 40.71 days</div>`)[0];
+                popup_ebabafc627b8ce9467a60a3d664e243e.setContent(html_aea1b94cf905b6761269b151f769dc36);
+            
+        
+
+        circle_marker_3c211a95e5e91ecf6083444fe0096138.bindPopup(popup_ebabafc627b8ce9467a60a3d664e243e)
+        ;
+
+        
+    
+    
+            var circle_marker_138997bba270f3591fe0e2fda8dbb432 = L.circleMarker(
+                [51.366, -0.07762],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_9487825f5453a925133872179c5ec121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e0e1f71e6da094b0491785ca01491a9 = $(`<div id="html_6e0e1f71e6da094b0491785ca01491a9" style="width: 100.0%; height: 100.0%;">Croydon: 42.94 days</div>`)[0];
+                popup_9487825f5453a925133872179c5ec121.setContent(html_6e0e1f71e6da094b0491785ca01491a9);
+            
+        
+
+        circle_marker_138997bba270f3591fe0e2fda8dbb432.bindPopup(popup_9487825f5453a925133872179c5ec121)
+        ;
+
+        
+    
+    
+            var circle_marker_b85429775d0d293331d62a03daa184a7 = L.circleMarker(
+                [54.5353, -1.56836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_425107c2394b99b3ed238778391bd09d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9787637208cd6f835fe98c68aa7cce76 = $(`<div id="html_9787637208cd6f835fe98c68aa7cce76" style="width: 100.0%; height: 100.0%;">Darlington: 43.21 days</div>`)[0];
+                popup_425107c2394b99b3ed238778391bd09d.setContent(html_9787637208cd6f835fe98c68aa7cce76);
+            
+        
+
+        circle_marker_b85429775d0d293331d62a03daa184a7.bindPopup(popup_425107c2394b99b3ed238778391bd09d)
+        ;
+
+        
+    
+    
+            var circle_marker_f53cf799fdc0c045f650118a408b35fd = L.circleMarker(
+                [51.433699999999995, 0.245276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_8e380243143dd2577dbc5b1b42170ae2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7c3053861c25dfa4a9e2d57853dc968 = $(`<div id="html_c7c3053861c25dfa4a9e2d57853dc968" style="width: 100.0%; height: 100.0%;">Dartford: 46.08 days</div>`)[0];
+                popup_8e380243143dd2577dbc5b1b42170ae2.setContent(html_c7c3053861c25dfa4a9e2d57853dc968);
+            
+        
+
+        circle_marker_f53cf799fdc0c045f650118a408b35fd.bindPopup(popup_8e380243143dd2577dbc5b1b42170ae2)
+        ;
+
+        
+    
+    
+            var circle_marker_61f5e85f21a18f75fd6f3868dcc7e3e3 = L.circleMarker(
+                [52.9146, -1.47187],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_8d7c3f3c64997bcbd6fdeabf732a59ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4c8dcdc5e889f3a7851e8a423ee4446 = $(`<div id="html_f4c8dcdc5e889f3a7851e8a423ee4446" style="width: 100.0%; height: 100.0%;">Derby: 40.51 days</div>`)[0];
+                popup_8d7c3f3c64997bcbd6fdeabf732a59ac.setContent(html_f4c8dcdc5e889f3a7851e8a423ee4446);
+            
+        
+
+        circle_marker_61f5e85f21a18f75fd6f3868dcc7e3e3.bindPopup(popup_8d7c3f3c64997bcbd6fdeabf732a59ac)
+        ;
+
+        
+    
+    
+            var circle_marker_1cb487fbc25157f3137e5d3fb21500bd = L.circleMarker(
+                [53.527, -1.10895],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_993db62795d4a21de2e368974b4588b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80b36a75ea120ee881ba9b4025221c1d = $(`<div id="html_80b36a75ea120ee881ba9b4025221c1d" style="width: 100.0%; height: 100.0%;">Doncaster: 40.43 days</div>`)[0];
+                popup_993db62795d4a21de2e368974b4588b0.setContent(html_80b36a75ea120ee881ba9b4025221c1d);
+            
+        
+
+        circle_marker_1cb487fbc25157f3137e5d3fb21500bd.bindPopup(popup_993db62795d4a21de2e368974b4588b0)
+        ;
+
+        
+    
+    
+            var circle_marker_6a756d09d8710dc89f07b417482fb3e3 = L.circleMarker(
+                [52.4951, -2.10171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_00eddf73dbb8a3e0949d59c7ee5647eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4f4d0071cdb620d327f413f508a293b = $(`<div id="html_d4f4d0071cdb620d327f413f508a293b" style="width: 100.0%; height: 100.0%;">Dudley: 42.38 days</div>`)[0];
+                popup_00eddf73dbb8a3e0949d59c7ee5647eb.setContent(html_d4f4d0071cdb620d327f413f508a293b);
+            
+        
+
+        circle_marker_6a756d09d8710dc89f07b417482fb3e3.bindPopup(popup_00eddf73dbb8a3e0949d59c7ee5647eb)
+        ;
+
+        
+    
+    
+            var circle_marker_815fe3f37058817279e69a8df9cd29b1 = L.circleMarker(
+                [51.6489, -0.08144],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_44c8f4a2bb0193c1197c96a395e79775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd2ed97d6f108e1fae23c442b5def102 = $(`<div id="html_cd2ed97d6f108e1fae23c442b5def102" style="width: 100.0%; height: 100.0%;">Enfield: 38.62 days</div>`)[0];
+                popup_44c8f4a2bb0193c1197c96a395e79775.setContent(html_cd2ed97d6f108e1fae23c442b5def102);
+            
+        
+
+        circle_marker_815fe3f37058817279e69a8df9cd29b1.bindPopup(popup_44c8f4a2bb0193c1197c96a395e79775)
+        ;
+
+        
+    
+    
+            var circle_marker_39bb7f1a0d3735dd260cf11ffd67d44a = L.circleMarker(
+                [50.7178, -3.51369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_82f350572f5d4834ba3cbec4b733e083 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08a1f1917d5354905f4bc988c0fab002 = $(`<div id="html_08a1f1917d5354905f4bc988c0fab002" style="width: 100.0%; height: 100.0%;">Exeter: 40.89 days</div>`)[0];
+                popup_82f350572f5d4834ba3cbec4b733e083.setContent(html_08a1f1917d5354905f4bc988c0fab002);
+            
+        
+
+        circle_marker_39bb7f1a0d3735dd260cf11ffd67d44a.bindPopup(popup_82f350572f5d4834ba3cbec4b733e083)
+        ;
+
+        
+    
+    
+            var circle_marker_7a3223c2deebd9bac2fe7eb85d155bfc = L.circleMarker(
+                [56.0008, -3.83619],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_185bbb8b7b7aee8c580a2f4182e99758 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_565c1bae7e46ab9cd4edea79e5ec6e1d = $(`<div id="html_565c1bae7e46ab9cd4edea79e5ec6e1d" style="width: 100.0%; height: 100.0%;">Falkirk: 25.04 days</div>`)[0];
+                popup_185bbb8b7b7aee8c580a2f4182e99758.setContent(html_565c1bae7e46ab9cd4edea79e5ec6e1d);
+            
+        
+
+        circle_marker_7a3223c2deebd9bac2fe7eb85d155bfc.bindPopup(popup_185bbb8b7b7aee8c580a2f4182e99758)
+        ;
+
+        
+    
+    
+            var circle_marker_1c3472c9527e5743d1b48e2846d0591a = L.circleMarker(
+                [51.8464, -2.23263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_9a68630f926c7bedf80a127b9d48e2e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_123d4fa9fec61cf22212b07ee23c1f5b = $(`<div id="html_123d4fa9fec61cf22212b07ee23c1f5b" style="width: 100.0%; height: 100.0%;">Gloucester: 39.71 days</div>`)[0];
+                popup_9a68630f926c7bedf80a127b9d48e2e5.setContent(html_123d4fa9fec61cf22212b07ee23c1f5b);
+            
+        
+
+        circle_marker_1c3472c9527e5743d1b48e2846d0591a.bindPopup(popup_9a68630f926c7bedf80a127b9d48e2e5)
+        ;
+
+        
+    
+    
+            var circle_marker_4939aad84c602ecd516ad03240672788 = L.circleMarker(
+                [51.5947, -0.33599],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_274add1392840c2b4141168d7f37f695 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9054a3122a9f0f69859151631d8c60c = $(`<div id="html_c9054a3122a9f0f69859151631d8c60c" style="width: 100.0%; height: 100.0%;">Harrow: 46.53 days</div>`)[0];
+                popup_274add1392840c2b4141168d7f37f695.setContent(html_c9054a3122a9f0f69859151631d8c60c);
+            
+        
+
+        circle_marker_4939aad84c602ecd516ad03240672788.bindPopup(popup_274add1392840c2b4141168d7f37f695)
+        ;
+
+        
+    
+    
+            var circle_marker_0fda898844e01a5853c034fc26336e31 = L.circleMarker(
+                [52.0559, 1.16618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_f8954ad1c41fc8d148a43972e735bcea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3b07cb448a8996fec44bc9cf94401c6 = $(`<div id="html_f3b07cb448a8996fec44bc9cf94401c6" style="width: 100.0%; height: 100.0%;">Ipswich: 44.99 days</div>`)[0];
+                popup_f8954ad1c41fc8d148a43972e735bcea.setContent(html_f3b07cb448a8996fec44bc9cf94401c6);
+            
+        
+
+        circle_marker_0fda898844e01a5853c034fc26336e31.bindPopup(popup_f8954ad1c41fc8d148a43972e735bcea)
+        ;
+
+        
+    
+    
+            var circle_marker_07af8439a934439388d70d3978465827 = L.circleMarker(
+                [54.079, -2.6603],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_acc73d7beaf73a38147a887924323348 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_688ac4ceaed06ecefd2c592bac4a161b = $(`<div id="html_688ac4ceaed06ecefd2c592bac4a161b" style="width: 100.0%; height: 100.0%;">Lancaster: 37.55 days</div>`)[0];
+                popup_acc73d7beaf73a38147a887924323348.setContent(html_688ac4ceaed06ecefd2c592bac4a161b);
+            
+        
+
+        circle_marker_07af8439a934439388d70d3978465827.bindPopup(popup_acc73d7beaf73a38147a887924323348)
+        ;
+
+        
+    
+    
+            var circle_marker_040c752868f6e9d12d636bb6d688216f = L.circleMarker(
+                [53.8227, -1.50736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_64137d12b578268b3d5704c886c3500b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbab57f72957a1b0e85986064791eb80 = $(`<div id="html_cbab57f72957a1b0e85986064791eb80" style="width: 100.0%; height: 100.0%;">Leeds: 42.73 days</div>`)[0];
+                popup_64137d12b578268b3d5704c886c3500b.setContent(html_cbab57f72957a1b0e85986064791eb80);
+            
+        
+
+        circle_marker_040c752868f6e9d12d636bb6d688216f.bindPopup(popup_64137d12b578268b3d5704c886c3500b)
+        ;
+
+        
+    
+    
+            var circle_marker_4b3101c5027a7fc582998c1e1268cbb2 = L.circleMarker(
+                [52.63589999999999, -1.13041],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_22a2a3986588585934c6cb4b7bcc1e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a20f2f261efe7ae8fe3199033483a6d = $(`<div id="html_5a20f2f261efe7ae8fe3199033483a6d" style="width: 100.0%; height: 100.0%;">Leicester: 40.91 days</div>`)[0];
+                popup_22a2a3986588585934c6cb4b7bcc1e2e.setContent(html_5a20f2f261efe7ae8fe3199033483a6d);
+            
+        
+
+        circle_marker_4b3101c5027a7fc582998c1e1268cbb2.bindPopup(popup_22a2a3986588585934c6cb4b7bcc1e2e)
+        ;
+
+        
+    
+    
+            var circle_marker_e5f3aaabb145347b9e066845e9fe980a = L.circleMarker(
+                [53.21920000000001, -0.55849],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_0b97183ea7248dae3e5e44cc6da3a8d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96efa618fef2dc7b98dc2e2022218dba = $(`<div id="html_96efa618fef2dc7b98dc2e2022218dba" style="width: 100.0%; height: 100.0%;">Lincoln: 44.82 days</div>`)[0];
+                popup_0b97183ea7248dae3e5e44cc6da3a8d2.setContent(html_96efa618fef2dc7b98dc2e2022218dba);
+            
+        
+
+        circle_marker_e5f3aaabb145347b9e066845e9fe980a.bindPopup(popup_0b97183ea7248dae3e5e44cc6da3a8d2)
+        ;
+
+        
+    
+    
+            var circle_marker_c3b0a7a9e6d1765208f76939ec0c2fa8 = L.circleMarker(
+                [53.4083, -2.91368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_f51ec18a273e9ece640ecba944ba00e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1d9b8555eb514d0c32ed7e6b7f0d5d4 = $(`<div id="html_c1d9b8555eb514d0c32ed7e6b7f0d5d4" style="width: 100.0%; height: 100.0%;">Liverpool: 41.52 days</div>`)[0];
+                popup_f51ec18a273e9ece640ecba944ba00e1.setContent(html_c1d9b8555eb514d0c32ed7e6b7f0d5d4);
+            
+        
+
+        circle_marker_c3b0a7a9e6d1765208f76939ec0c2fa8.bindPopup(popup_f51ec18a273e9ece640ecba944ba00e1)
+        ;
+
+        
+    
+    
+            var circle_marker_fbba10543b083bc065d3c92cbedbe008 = L.circleMarker(
+                [51.891, -0.4232],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_6a05f57883126f0a73ba6e32f7ba4028 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8be0b749c697a1b072af2fa5df5b65af = $(`<div id="html_8be0b749c697a1b072af2fa5df5b65af" style="width: 100.0%; height: 100.0%;">Luton: 57.23 days</div>`)[0];
+                popup_6a05f57883126f0a73ba6e32f7ba4028.setContent(html_8be0b749c697a1b072af2fa5df5b65af);
+            
+        
+
+        circle_marker_fbba10543b083bc065d3c92cbedbe008.bindPopup(popup_6a05f57883126f0a73ba6e32f7ba4028)
+        ;
+
+        
+    
+    
+            var circle_marker_aa4c87c8fe08d18d36f5a4e9212c63a7 = L.circleMarker(
+                [53.4701, -2.2336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_75b59f078c50126d8713e6e99b699ab5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b3531382d0304c0210060dc288b8a9e = $(`<div id="html_2b3531382d0304c0210060dc288b8a9e" style="width: 100.0%; height: 100.0%;">Manchester: 39.81 days</div>`)[0];
+                popup_75b59f078c50126d8713e6e99b699ab5.setContent(html_2b3531382d0304c0210060dc288b8a9e);
+            
+        
+
+        circle_marker_aa4c87c8fe08d18d36f5a4e9212c63a7.bindPopup(popup_75b59f078c50126d8713e6e99b699ab5)
+        ;
+
+        
+    
+    
+            var circle_marker_23e1db6a13d8be127b386640425b97c5 = L.circleMarker(
+                [51.4477, 0.563174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_5c4b83934d5d22ec2e6fdef0f12056fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eabe0d1b0ec08e66d184762401e9d8a = $(`<div id="html_0eabe0d1b0ec08e66d184762401e9d8a" style="width: 100.0%; height: 100.0%;">Medway: 39.75 days</div>`)[0];
+                popup_5c4b83934d5d22ec2e6fdef0f12056fe.setContent(html_0eabe0d1b0ec08e66d184762401e9d8a);
+            
+        
+
+        circle_marker_23e1db6a13d8be127b386640425b97c5.bindPopup(popup_5c4b83934d5d22ec2e6fdef0f12056fe)
+        ;
+
+        
+    
+    
+            var circle_marker_59bf698a9b6ca4b811237537ace135d9 = L.circleMarker(
+                [52.072399999999995, -0.74071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_c2bd9f807789fdace26c9afd05fb03e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a4a7aac33969998af281c875d7d329d = $(`<div id="html_3a4a7aac33969998af281c875d7d329d" style="width: 100.0%; height: 100.0%;">Milton Keynes: 45.96 days</div>`)[0];
+                popup_c2bd9f807789fdace26c9afd05fb03e2.setContent(html_3a4a7aac33969998af281c875d7d329d);
+            
+        
+
+        circle_marker_59bf698a9b6ca4b811237537ace135d9.bindPopup(popup_c2bd9f807789fdace26c9afd05fb03e2)
+        ;
+
+        
+    
+    
+            var circle_marker_9449435212afbe9193ea8014e457f81f = L.circleMarker(
+                [51.5823, -2.89769],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_b70ae6cfeb9e0aa8fa9d7461fc38c17c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba9fe5cf4b69130e2367fa7643db54ca = $(`<div id="html_ba9fe5cf4b69130e2367fa7643db54ca" style="width: 100.0%; height: 100.0%;">Newport: 37.47 days</div>`)[0];
+                popup_b70ae6cfeb9e0aa8fa9d7461fc38c17c.setContent(html_ba9fe5cf4b69130e2367fa7643db54ca);
+            
+        
+
+        circle_marker_9449435212afbe9193ea8014e457f81f.bindPopup(popup_b70ae6cfeb9e0aa8fa9d7461fc38c17c)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0caaedd1783fc4adbe8a13fb22f0b9 = L.circleMarker(
+                [52.6401, 1.28498],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_af6c60abbc2b67aed466d8eb86cbb519 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c4b675e4750a604c55c019478490889 = $(`<div id="html_5c4b675e4750a604c55c019478490889" style="width: 100.0%; height: 100.0%;">Norwich: 46.71 days</div>`)[0];
+                popup_af6c60abbc2b67aed466d8eb86cbb519.setContent(html_5c4b675e4750a604c55c019478490889);
+            
+        
+
+        circle_marker_fd0caaedd1783fc4adbe8a13fb22f0b9.bindPopup(popup_af6c60abbc2b67aed466d8eb86cbb519)
+        ;
+
+        
+    
+    
+            var circle_marker_5bc5fa0fdcb69999d0ee90e9c8b4f941 = L.circleMarker(
+                [52.9542, -1.16668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_1fc4df9ca3f1fcf767e5e2c758122530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cc359ee2f91707e38b8496594d7db21 = $(`<div id="html_6cc359ee2f91707e38b8496594d7db21" style="width: 100.0%; height: 100.0%;">Nottingham: 45.31 days</div>`)[0];
+                popup_1fc4df9ca3f1fcf767e5e2c758122530.setContent(html_6cc359ee2f91707e38b8496594d7db21);
+            
+        
+
+        circle_marker_5bc5fa0fdcb69999d0ee90e9c8b4f941.bindPopup(popup_1fc4df9ca3f1fcf767e5e2c758122530)
+        ;
+
+        
+    
+    
+            var circle_marker_61202050661fb75a1cfec59289c9031b = L.circleMarker(
+                [53.5577, -2.05275],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_90d19b8b57af50522f258ae3bfa51d84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d4f275dc0eb15e46ed29248fd361a8e = $(`<div id="html_1d4f275dc0eb15e46ed29248fd361a8e" style="width: 100.0%; height: 100.0%;">Oldham: 45.33 days</div>`)[0];
+                popup_90d19b8b57af50522f258ae3bfa51d84.setContent(html_1d4f275dc0eb15e46ed29248fd361a8e);
+            
+        
+
+        circle_marker_61202050661fb75a1cfec59289c9031b.bindPopup(popup_90d19b8b57af50522f258ae3bfa51d84)
+        ;
+
+        
+    
+    
+            var circle_marker_b1fd494973e6dd072341cb9875e0a1a9 = L.circleMarker(
+                [51.7536, -1.24406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_b6963cd3c1626a6c7bc4dc5ca5208919 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21c2fb5a21fe3e761e771e058587f2b8 = $(`<div id="html_21c2fb5a21fe3e761e771e058587f2b8" style="width: 100.0%; height: 100.0%;">Oxford: 38.46 days</div>`)[0];
+                popup_b6963cd3c1626a6c7bc4dc5ca5208919.setContent(html_21c2fb5a21fe3e761e771e058587f2b8);
+            
+        
+
+        circle_marker_b1fd494973e6dd072341cb9875e0a1a9.bindPopup(popup_b6963cd3c1626a6c7bc4dc5ca5208919)
+        ;
+
+        
+    
+    
+            var circle_marker_99bd3e6522d48c00d9edaa7a03802a88 = L.circleMarker(
+                [52.5922, -0.26874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_53c2ef7eb78b83c32805c3fd3649054d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05d25558da88b7e18c8a586f456d1bdd = $(`<div id="html_05d25558da88b7e18c8a586f456d1bdd" style="width: 100.0%; height: 100.0%;">Peterborough: 43.45 days</div>`)[0];
+                popup_53c2ef7eb78b83c32805c3fd3649054d.setContent(html_05d25558da88b7e18c8a586f456d1bdd);
+            
+        
+
+        circle_marker_99bd3e6522d48c00d9edaa7a03802a88.bindPopup(popup_53c2ef7eb78b83c32805c3fd3649054d)
+        ;
+
+        
+    
+    
+            var circle_marker_5d0a19cf281452f01d792e84bcfce0f5 = L.circleMarker(
+                [50.40489999999999, -4.11298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_6e7c80f1d93490346f5dbb06c37e48a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af6a0fb8c5b278d756651b050bdd7d40 = $(`<div id="html_af6a0fb8c5b278d756651b050bdd7d40" style="width: 100.0%; height: 100.0%;">Plymouth: 36.47 days</div>`)[0];
+                popup_6e7c80f1d93490346f5dbb06c37e48a0.setContent(html_af6a0fb8c5b278d756651b050bdd7d40);
+            
+        
+
+        circle_marker_5d0a19cf281452f01d792e84bcfce0f5.bindPopup(popup_6e7c80f1d93490346f5dbb06c37e48a0)
+        ;
+
+        
+    
+    
+            var circle_marker_fef972d65117c8d8269ecb0d5cc96cd8 = L.circleMarker(
+                [50.808, -1.07006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_f31d58f3cca5bdeb53603d4cf5540f84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ff1b88ea079821ecf8f442d27aeeef = $(`<div id="html_23ff1b88ea079821ecf8f442d27aeeef" style="width: 100.0%; height: 100.0%;">Portsmouth: 38.71 days</div>`)[0];
+                popup_f31d58f3cca5bdeb53603d4cf5540f84.setContent(html_23ff1b88ea079821ecf8f442d27aeeef);
+            
+        
+
+        circle_marker_fef972d65117c8d8269ecb0d5cc96cd8.bindPopup(popup_f31d58f3cca5bdeb53603d4cf5540f84)
+        ;
+
+        
+    
+    
+            var circle_marker_1a476043be89b54026e1e69b7a1ed1ad = L.circleMarker(
+                [53.822, -2.71805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_10302e8e2c4b3698376ca1ee34c9a33e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d8f1b01b3b2ebd7f22efe9e4130d3fb = $(`<div id="html_5d8f1b01b3b2ebd7f22efe9e4130d3fb" style="width: 100.0%; height: 100.0%;">Preston: 38.23 days</div>`)[0];
+                popup_10302e8e2c4b3698376ca1ee34c9a33e.setContent(html_5d8f1b01b3b2ebd7f22efe9e4130d3fb);
+            
+        
+
+        circle_marker_1a476043be89b54026e1e69b7a1ed1ad.bindPopup(popup_10302e8e2c4b3698376ca1ee34c9a33e)
+        ;
+
+        
+    
+    
+            var circle_marker_7955360f0262d690f40647b75dc34271 = L.circleMarker(
+                [51.453, -0.9907500000000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_af6146e1d69f98af071da01e3c885fd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_deda4a8d4d746bd6dd0bd90110ea6b86 = $(`<div id="html_deda4a8d4d746bd6dd0bd90110ea6b86" style="width: 100.0%; height: 100.0%;">Reading: 42.91 days</div>`)[0];
+                popup_af6146e1d69f98af071da01e3c885fd7.setContent(html_deda4a8d4d746bd6dd0bd90110ea6b86);
+            
+        
+
+        circle_marker_7955360f0262d690f40647b75dc34271.bindPopup(popup_af6146e1d69f98af071da01e3c885fd7)
+        ;
+
+        
+    
+    
+            var circle_marker_125475272c4af4436b226a9f13ba00bb = L.circleMarker(
+                [53.4036, -1.54255],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_e53e82960336812e92025c1b3a7b3203 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02a83a337a218a68fdc4512ff8e42240 = $(`<div id="html_02a83a337a218a68fdc4512ff8e42240" style="width: 100.0%; height: 100.0%;">Sheffield: 39.36 days</div>`)[0];
+                popup_e53e82960336812e92025c1b3a7b3203.setContent(html_02a83a337a218a68fdc4512ff8e42240);
+            
+        
+
+        circle_marker_125475272c4af4436b226a9f13ba00bb.bindPopup(popup_e53e82960336812e92025c1b3a7b3203)
+        ;
+
+        
+    
+    
+            var circle_marker_b3695f34ac118f3e4f18913597ffee18 = L.circleMarker(
+                [51.5035, -0.57618],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_47d05a44eae7d84b932816d5db50243a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a640eec2ecc0d8bb8fe093f425efa6e = $(`<div id="html_1a640eec2ecc0d8bb8fe093f425efa6e" style="width: 100.0%; height: 100.0%;">Slough: 42.30 days</div>`)[0];
+                popup_47d05a44eae7d84b932816d5db50243a.setContent(html_1a640eec2ecc0d8bb8fe093f425efa6e);
+            
+        
+
+        circle_marker_b3695f34ac118f3e4f18913597ffee18.bindPopup(popup_47d05a44eae7d84b932816d5db50243a)
+        ;
+
+        
+    
+    
+            var circle_marker_868c699753c64969358af62c79757f56 = L.circleMarker(
+                [50.9212, -1.39953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_b8bbe88df753d7226dd8bdb65a2d2115 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2502d3b71611931229f70c993a131330 = $(`<div id="html_2502d3b71611931229f70c993a131330" style="width: 100.0%; height: 100.0%;">Southampton: 34.01 days</div>`)[0];
+                popup_b8bbe88df753d7226dd8bdb65a2d2115.setContent(html_2502d3b71611931229f70c993a131330);
+            
+        
+
+        circle_marker_868c699753c64969358af62c79757f56.bindPopup(popup_b8bbe88df753d7226dd8bdb65a2d2115)
+        ;
+
+        
+    
+    
+            var circle_marker_56591bb3dbc8a2470cfb97be46baa49f = L.circleMarker(
+                [51.90540000000001, -0.18987],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_0b0ce80908319694af4c1ba7a3497cd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dfa0e8c4e3a5a974985d3556d1a04483 = $(`<div id="html_dfa0e8c4e3a5a974985d3556d1a04483" style="width: 100.0%; height: 100.0%;">Stevenage: 52.34 days</div>`)[0];
+                popup_0b0ce80908319694af4c1ba7a3497cd6.setContent(html_dfa0e8c4e3a5a974985d3556d1a04483);
+            
+        
+
+        circle_marker_56591bb3dbc8a2470cfb97be46baa49f.bindPopup(popup_0b0ce80908319694af4c1ba7a3497cd6)
+        ;
+
+        
+    
+    
+            var circle_marker_a3c528d041836c6d128d02a38c4688c5 = L.circleMarker(
+                [53.3911, -2.12466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_d73723ddc24e6891507aa401963b3445 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe35e8eb640c65404ea63691e8470b6a = $(`<div id="html_fe35e8eb640c65404ea63691e8470b6a" style="width: 100.0%; height: 100.0%;">Stockport: 43.37 days</div>`)[0];
+                popup_d73723ddc24e6891507aa401963b3445.setContent(html_fe35e8eb640c65404ea63691e8470b6a);
+            
+        
+
+        circle_marker_a3c528d041836c6d128d02a38c4688c5.bindPopup(popup_d73723ddc24e6891507aa401963b3445)
+        ;
+
+        
+    
+    
+            var circle_marker_19f69c48e82ae2954aebf5479b8b2a61 = L.circleMarker(
+                [54.8571, -1.43368],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_c8997d47e01e79edf873674a77d9d4c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4de1c43af2d7a3c8d722edc8399eb9b = $(`<div id="html_e4de1c43af2d7a3c8d722edc8399eb9b" style="width: 100.0%; height: 100.0%;">Sunderland: 44.12 days</div>`)[0];
+                popup_c8997d47e01e79edf873674a77d9d4c0.setContent(html_e4de1c43af2d7a3c8d722edc8399eb9b);
+            
+        
+
+        circle_marker_19f69c48e82ae2954aebf5479b8b2a61.bindPopup(popup_c8997d47e01e79edf873674a77d9d4c0)
+        ;
+
+        
+    
+    
+            var circle_marker_046cce853be688aa6eb7cd61b5354c11 = L.circleMarker(
+                [51.3576, -0.17227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_d8e48a6b775666662b1cccbb4b376f37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c4e931dad3c99cc6dd51df9e55895e7 = $(`<div id="html_3c4e931dad3c99cc6dd51df9e55895e7" style="width: 100.0%; height: 100.0%;">Sutton: 53.06 days</div>`)[0];
+                popup_d8e48a6b775666662b1cccbb4b376f37.setContent(html_3c4e931dad3c99cc6dd51df9e55895e7);
+            
+        
+
+        circle_marker_046cce853be688aa6eb7cd61b5354c11.bindPopup(popup_d8e48a6b775666662b1cccbb4b376f37)
+        ;
+
+        
+    
+    
+            var circle_marker_e7adbdc7af7c6f46800f89b4e63c27b0 = L.circleMarker(
+                [51.6581, -3.96723],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_53dd0731858dbc6c45fdf1f9816ba34e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33a56f7dd9e99edfaa01853f47a78190 = $(`<div id="html_33a56f7dd9e99edfaa01853f47a78190" style="width: 100.0%; height: 100.0%;">Swansea: 50.33 days</div>`)[0];
+                popup_53dd0731858dbc6c45fdf1f9816ba34e.setContent(html_33a56f7dd9e99edfaa01853f47a78190);
+            
+        
+
+        circle_marker_e7adbdc7af7c6f46800f89b4e63c27b0.bindPopup(popup_53dd0731858dbc6c45fdf1f9816ba34e)
+        ;
+
+        
+    
+    
+            var circle_marker_a47fb9c9d941194519a494340525883a = L.circleMarker(
+                [51.5776, -1.73369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_a93c446462bab26307d69951bc00d26d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1881c7a111a1c6aa250a313810fb137d = $(`<div id="html_1881c7a111a1c6aa250a313810fb137d" style="width: 100.0%; height: 100.0%;">Swindon: 43.94 days</div>`)[0];
+                popup_a93c446462bab26307d69951bc00d26d.setContent(html_1881c7a111a1c6aa250a313810fb137d);
+            
+        
+
+        circle_marker_a47fb9c9d941194519a494340525883a.bindPopup(popup_a93c446462bab26307d69951bc00d26d)
+        ;
+
+        
+    
+    
+            var circle_marker_8390c23efc45149d66a160fbfa3464a5 = L.circleMarker(
+                [53.6592, -1.42091],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_21f535d253a9b6a821993ccaeea1e081 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20da6671a6fb3138853c41f6f91ab302 = $(`<div id="html_20da6671a6fb3138853c41f6f91ab302" style="width: 100.0%; height: 100.0%;">Wakefield: 36.53 days</div>`)[0];
+                popup_21f535d253a9b6a821993ccaeea1e081.setContent(html_20da6671a6fb3138853c41f6f91ab302);
+            
+        
+
+        circle_marker_8390c23efc45149d66a160fbfa3464a5.bindPopup(popup_21f535d253a9b6a821993ccaeea1e081)
+        ;
+
+        
+    
+    
+            var circle_marker_fdba4c8dce8c887d8f8ffbcab3e9739e = L.circleMarker(
+                [52.6051, -1.97043],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_513b94125d9562c5267f785f45c1a3e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0965c425b849bc27b33b5d9881585ef0 = $(`<div id="html_0965c425b849bc27b33b5d9881585ef0" style="width: 100.0%; height: 100.0%;">Walsall: 40.62 days</div>`)[0];
+                popup_513b94125d9562c5267f785f45c1a3e3.setContent(html_0965c425b849bc27b33b5d9881585ef0);
+            
+        
+
+        circle_marker_fdba4c8dce8c887d8f8ffbcab3e9739e.bindPopup(popup_513b94125d9562c5267f785f45c1a3e3)
+        ;
+
+        
+    
+    
+            var circle_marker_2ee57958290e5087272b811eb21377e5 = L.circleMarker(
+                [53.3916, -2.56168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_f9e1bd86224df186909316c65fb7f3d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_135227cbfc699e9de48342ed9d72c2f3 = $(`<div id="html_135227cbfc699e9de48342ed9d72c2f3" style="width: 100.0%; height: 100.0%;">Warrington: 39.35 days</div>`)[0];
+                popup_f9e1bd86224df186909316c65fb7f3d8.setContent(html_135227cbfc699e9de48342ed9d72c2f3);
+            
+        
+
+        circle_marker_2ee57958290e5087272b811eb21377e5.bindPopup(popup_f9e1bd86224df186909316c65fb7f3d8)
+        ;
+
+        
+    
+    
+            var circle_marker_1b5d30677f35d6f7d715d3067fe5fe51 = L.circleMarker(
+                [51.6717, -0.40429],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_1ca73127573cfa35e349a0e06f7cfece = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e8b3247d72e7d07d0375349775a8e5e = $(`<div id="html_6e8b3247d72e7d07d0375349775a8e5e" style="width: 100.0%; height: 100.0%;">Watford: 43.23 days</div>`)[0];
+                popup_1ca73127573cfa35e349a0e06f7cfece.setContent(html_6e8b3247d72e7d07d0375349775a8e5e);
+            
+        
+
+        circle_marker_1b5d30677f35d6f7d715d3067fe5fe51.bindPopup(popup_1ca73127573cfa35e349a0e06f7cfece)
+        ;
+
+        
+    
+    
+            var circle_marker_c811a509da5ff3e8c195ea79fe1f1352 = L.circleMarker(
+                [53.5145, -2.57242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_4c7962e2ae2a879c1aa0cd10be81204f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5160b71bc1ef24303e21bf7d2fe39b77 = $(`<div id="html_5160b71bc1ef24303e21bf7d2fe39b77" style="width: 100.0%; height: 100.0%;">Wigan: 37.79 days</div>`)[0];
+                popup_4c7962e2ae2a879c1aa0cd10be81204f.setContent(html_5160b71bc1ef24303e21bf7d2fe39b77);
+            
+        
+
+        circle_marker_c811a509da5ff3e8c195ea79fe1f1352.bindPopup(popup_4c7962e2ae2a879c1aa0cd10be81204f)
+        ;
+
+        
+    
+    
+            var circle_marker_5d7962e7b5eb926a3d8be668286c67ec = L.circleMarker(
+                [52.5979, -2.12746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_9a2e9a99d255334d0a9233425a71d453 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a28976e53772e3a5997ef4cfd73a1731 = $(`<div id="html_a28976e53772e3a5997ef4cfd73a1731" style="width: 100.0%; height: 100.0%;">Wolverhampton: 33.91 days</div>`)[0];
+                popup_9a2e9a99d255334d0a9233425a71d453.setContent(html_a28976e53772e3a5997ef4cfd73a1731);
+            
+        
+
+        circle_marker_5d7962e7b5eb926a3d8be668286c67ec.bindPopup(popup_9a2e9a99d255334d0a9233425a71d453)
+        ;
+
+        
+    
+    
+            var circle_marker_7a6573e54b006ae2e73a580f4ac6cd46 = L.circleMarker(
+                [52.194799999999994, -2.20997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_01d8832d0311b5d29dee2d791bfee567 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8b118e2a2020426c94edccc237164d5 = $(`<div id="html_c8b118e2a2020426c94edccc237164d5" style="width: 100.0%; height: 100.0%;">Worcester: 48.64 days</div>`)[0];
+                popup_01d8832d0311b5d29dee2d791bfee567.setContent(html_c8b118e2a2020426c94edccc237164d5);
+            
+        
+
+        circle_marker_7a6573e54b006ae2e73a580f4ac6cd46.bindPopup(popup_01d8832d0311b5d29dee2d791bfee567)
+        ;
+
+        
+    
+    
+            var circle_marker_5573dde4ebdc84be82adce18e3edf317 = L.circleMarker(
+                [53.9658, -1.07377],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_e7463fbb1153a9ed66c397e0eef697e6);
+        
+    
+        var popup_1ae070343944cac99190481ee7734557 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_844f72de821dd970993a046e0740850a = $(`<div id="html_844f72de821dd970993a046e0740850a" style="width: 100.0%; height: 100.0%;">York: 36.33 days</div>`)[0];
+                popup_1ae070343944cac99190481ee7734557.setContent(html_844f72de821dd970993a046e0740850a);
+            
+        
+
+        circle_marker_5573dde4ebdc84be82adce18e3edf317.bindPopup(popup_1ae070343944cac99190481ee7734557)
+        ;
+
+        
+    
+</script>
+</html>
