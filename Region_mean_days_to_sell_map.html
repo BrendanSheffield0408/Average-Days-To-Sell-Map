@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b8b97acaa6bcf3d555b58f534e55141 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b8b97acaa6bcf3d555b58f534e55141" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b8b97acaa6bcf3d555b58f534e55141 = L.map(
+                "map_2b8b97acaa6bcf3d555b58f534e55141",
+                {
+                    center: [54.5, -4.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d49e33c55c6ea066ade82e5e0734fb28 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d49e33c55c6ea066ade82e5e0734fb28.addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+            var circle_marker_8d3f0637df0f91f69c6f9628d25b1d8a = L.circleMarker(
+                [52.87509693202327, -1.2182596430719872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_2d1f05a0ea8cc60e681233fdef3cf5ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc8943a16db6bef6e457fd9b688edb0c = $(`<div id="html_cc8943a16db6bef6e457fd9b688edb0c" style="width: 100.0%; height: 100.0%;">East Midlands: 42.31 days</div>`)[0];
+                popup_2d1f05a0ea8cc60e681233fdef3cf5ea.setContent(html_cc8943a16db6bef6e457fd9b688edb0c);
+            
+        
+
+        circle_marker_8d3f0637df0f91f69c6f9628d25b1d8a.bindPopup(popup_2d1f05a0ea8cc60e681233fdef3cf5ea)
+        ;
+
+        
+    
+    
+            var circle_marker_c1bea89b98dc17dc03ce2964a6aad2a7 = L.circleMarker(
+                [52.187742733172904, 0.35030458907605916],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_78f702ddcd80ba6927d4abf25f629443 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b2577d828d97e68c6bcbd4e448f4af9 = $(`<div id="html_6b2577d828d97e68c6bcbd4e448f4af9" style="width: 100.0%; height: 100.0%;">East of England: 46.86 days</div>`)[0];
+                popup_78f702ddcd80ba6927d4abf25f629443.setContent(html_6b2577d828d97e68c6bcbd4e448f4af9);
+            
+        
+
+        circle_marker_c1bea89b98dc17dc03ce2964a6aad2a7.bindPopup(popup_78f702ddcd80ba6927d4abf25f629443)
+        ;
+
+        
+    
+    
+            var circle_marker_25e71c596b9ea17e98c06964af230e84 = L.circleMarker(
+                [51.52097008990319, -0.11393974204702628],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_374cf9dacba3903139825d71c2afa495 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89b606e0311848f26f75409c0a8ce0eb = $(`<div id="html_89b606e0311848f26f75409c0a8ce0eb" style="width: 100.0%; height: 100.0%;">London: 41.82 days</div>`)[0];
+                popup_374cf9dacba3903139825d71c2afa495.setContent(html_89b606e0311848f26f75409c0a8ce0eb);
+            
+        
+
+        circle_marker_25e71c596b9ea17e98c06964af230e84.bindPopup(popup_374cf9dacba3903139825d71c2afa495)
+        ;
+
+        
+    
+    
+            var circle_marker_626e20eacb3ddf1a465fa33a86313f4c = L.circleMarker(
+                [54.68223338038109, -1.5068653211009175],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_94b0a416d883b081fa0940cf32a191b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f993f1695a86f6d9e312507fbcd4bb2b = $(`<div id="html_f993f1695a86f6d9e312507fbcd4bb2b" style="width: 100.0%; height: 100.0%;">North East: 43.61 days</div>`)[0];
+                popup_94b0a416d883b081fa0940cf32a191b8.setContent(html_f993f1695a86f6d9e312507fbcd4bb2b);
+            
+        
+
+        circle_marker_626e20eacb3ddf1a465fa33a86313f4c.bindPopup(popup_94b0a416d883b081fa0940cf32a191b8)
+        ;
+
+        
+    
+    
+            var circle_marker_80964a054c009a54f27fdce2866465b7 = L.circleMarker(
+                [53.58030838197525, -2.4678115207409137],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_b99d86ac330f21ad10622e5204e2dde5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a46c986b929650e96d690eda647c9dc = $(`<div id="html_4a46c986b929650e96d690eda647c9dc" style="width: 100.0%; height: 100.0%;">North West: 41.14 days</div>`)[0];
+                popup_b99d86ac330f21ad10622e5204e2dde5.setContent(html_4a46c986b929650e96d690eda647c9dc);
+            
+        
+
+        circle_marker_80964a054c009a54f27fdce2866465b7.bindPopup(popup_b99d86ac330f21ad10622e5204e2dde5)
+        ;
+
+        
+    
+    
+            var circle_marker_8beb4c8ccdf06abc89b3706cdf92c010 = L.circleMarker(
+                [54.5985, -5.92535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_6a4ced6ca76dc5fa814e8f4d940435bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1274b866097c0bd19bd3a5a03f31b87 = $(`<div id="html_f1274b866097c0bd19bd3a5a03f31b87" style="width: 100.0%; height: 100.0%;">Northern Ireland: 45.48 days</div>`)[0];
+                popup_6a4ced6ca76dc5fa814e8f4d940435bb.setContent(html_f1274b866097c0bd19bd3a5a03f31b87);
+            
+        
+
+        circle_marker_8beb4c8ccdf06abc89b3706cdf92c010.bindPopup(popup_6a4ced6ca76dc5fa814e8f4d940435bb)
+        ;
+
+        
+    
+    
+            var circle_marker_ebdb21bff7d9ca30a9cbbe8171f04587 = L.circleMarker(
+                [56.0008, -3.83619],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_725fa5d7d9e63447df863c4e9e54e26c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78d69329cd5db3f5f67817a17dcd92ba = $(`<div id="html_78d69329cd5db3f5f67817a17dcd92ba" style="width: 100.0%; height: 100.0%;">Scotland: 25.04 days</div>`)[0];
+                popup_725fa5d7d9e63447df863c4e9e54e26c.setContent(html_78d69329cd5db3f5f67817a17dcd92ba);
+            
+        
+
+        circle_marker_ebdb21bff7d9ca30a9cbbe8171f04587.bindPopup(popup_725fa5d7d9e63447df863c4e9e54e26c)
+        ;
+
+        
+    
+    
+            var circle_marker_ac17a35e55547d723092a4dbd4f54c96 = L.circleMarker(
+                [51.41754387684661, -0.6351281089327627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_8da62b78700b324b1d5d0c869c1b156b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58bf1e3fe75d2b8a77ab0edbcb7f9faa = $(`<div id="html_58bf1e3fe75d2b8a77ab0edbcb7f9faa" style="width: 100.0%; height: 100.0%;">South East: 40.65 days</div>`)[0];
+                popup_8da62b78700b324b1d5d0c869c1b156b.setContent(html_58bf1e3fe75d2b8a77ab0edbcb7f9faa);
+            
+        
+
+        circle_marker_ac17a35e55547d723092a4dbd4f54c96.bindPopup(popup_8da62b78700b324b1d5d0c869c1b156b)
+        ;
+
+        
+    
+    
+            var circle_marker_30f0e79e1339072fa878d04beb3e4356 = L.circleMarker(
+                [51.2142032856838, -2.748346488158737],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_b809c1ef8a320e11f3775a33910760ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9bd5f83a94b8874a04b500b888367a = $(`<div id="html_ea9bd5f83a94b8874a04b500b888367a" style="width: 100.0%; height: 100.0%;">South West: 40.65 days</div>`)[0];
+                popup_b809c1ef8a320e11f3775a33910760ff.setContent(html_ea9bd5f83a94b8874a04b500b888367a);
+            
+        
+
+        circle_marker_30f0e79e1339072fa878d04beb3e4356.bindPopup(popup_b809c1ef8a320e11f3775a33910760ff)
+        ;
+
+        
+    
+    
+            var circle_marker_39725d53f93c3230620da66f2e5e60a1 = L.circleMarker(
+                [51.56220952148437, -3.276019560546875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_8beb58fe4dbbfd94d97872dc69f86594 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b26b6a6ac30bdc745f3209d060d67f3 = $(`<div id="html_5b26b6a6ac30bdc745f3209d060d67f3" style="width: 100.0%; height: 100.0%;">Wales: 43.12 days</div>`)[0];
+                popup_8beb58fe4dbbfd94d97872dc69f86594.setContent(html_5b26b6a6ac30bdc745f3209d060d67f3);
+            
+        
+
+        circle_marker_39725d53f93c3230620da66f2e5e60a1.bindPopup(popup_8beb58fe4dbbfd94d97872dc69f86594)
+        ;
+
+        
+    
+    
+            var circle_marker_d4d67a82d16d8b77a5c13bc9261f3bbf = L.circleMarker(
+                [52.47032864994363, -1.8315045236753102],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_b37b86018eedfa2f446e837058716e3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6ee2ec3fbaa17b15d651bd1a57c66b1 = $(`<div id="html_b6ee2ec3fbaa17b15d651bd1a57c66b1" style="width: 100.0%; height: 100.0%;">West Midlands: 40.31 days</div>`)[0];
+                popup_b37b86018eedfa2f446e837058716e3e.setContent(html_b6ee2ec3fbaa17b15d651bd1a57c66b1);
+            
+        
+
+        circle_marker_d4d67a82d16d8b77a5c13bc9261f3bbf.bindPopup(popup_b37b86018eedfa2f446e837058716e3e)
+        ;
+
+        
+    
+    
+            var circle_marker_3f5bf977131740644a761af35e00bd65 = L.circleMarker(
+                [53.59245506369427, -1.5085697834394904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_2b8b97acaa6bcf3d555b58f534e55141);
+        
+    
+        var popup_231c132dd1a7107dd6463f08f2ce6b48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8eb50b8fd11c84d590e94ea3a44d77c = $(`<div id="html_b8eb50b8fd11c84d590e94ea3a44d77c" style="width: 100.0%; height: 100.0%;">Yorkshire and the Humber: 41.25 days</div>`)[0];
+                popup_231c132dd1a7107dd6463f08f2ce6b48.setContent(html_b8eb50b8fd11c84d590e94ea3a44d77c);
+            
+        
+
+        circle_marker_3f5bf977131740644a761af35e00bd65.bindPopup(popup_231c132dd1a7107dd6463f08f2ce6b48)
+        ;
+
+        
+    
+</script>
+</html>
